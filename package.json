@@ -2,7 +2,7 @@
   "name": "stuart-clark-portfolio",
   "version": "1.0.0",
   "description": "Professional portfolio for Stuart Clark - AI Engineer & Safety Consultant",
-  "homepage": "https://USERNAME.github.io/stuart-clark-portfolio",
+  "homepage": "https://stuart-42.github.io/stuart-clark-portfolio",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
