@@ -253,7 +253,7 @@ export default function StuartClarkPortfolio() {
                 <h3 className="font-semibold text-lg mb-4">Project Resources</h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <a 
-                    href="#" 
+                    href="https://drive.google.com/file/d/1KnqiMBgV2T_Ur_c415AcwxtDlS6pHMHw/view?usp=sharing" 
                     className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200"
                   >
                     <FileText size={20} className="text-blue-600 flex-shrink-0" />
