@@ -158,8 +158,9 @@ export default function StuartClarkPortfolio() {
               <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <h3 className="font-semibold text-lg mb-2">Currently Seeking</h3>
                 <p className="text-slate-700">
-                  Machine Learning Engineer, AI Intern, or Software Engineer roles where I can continue 
-                  learning while contributing domain expertise in safety tech, NLP, or risk analysis
+                  Junior or entry-level Machine Learning Engineer and Software Engineer (Python/ML) roles
+                  where domain expertise in safety, NLP, and risk analysis adds immediate value. Open to
+                  structured graduate schemes with a strong ML focus.
                 </p>
               </div>
             </div>
@@ -826,19 +827,15 @@ export default function StuartClarkPortfolio() {
                 <ul className="space-y-3 text-slate-700">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>Machine Learning Engineer</strong> - Entry level or junior positions</span>
+                    <span><strong>Machine Learning Engineer</strong> - Junior or entry-level, with a safety, NLP, or risk focus</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>AI Internships</strong> - Eager to learn from experienced teams</span>
+                    <span><strong>Software Engineer (Python/ML)</strong> - Building intelligent systems and data pipelines</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>Software Engineer</strong> - Python/ML focused roles</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>Volunteer Projects</strong> - Contributing to meaningful AI initiatives</span>
+                    <span><strong>Graduate Schemes</strong> - Structured ML or AI programmes at tech or safety-focused organisations</span>
                   </li>
                 </ul>
               </div>
