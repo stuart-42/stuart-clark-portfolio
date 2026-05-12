@@ -697,13 +697,14 @@ export default function StuartClarkPortfolio() {
                 <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <h3 className="text-xl font-semibold">Professional Development</h3>
+                    <h3 className="text-xl font-semibold">NEBOSH Diploma — Advanced Professional Development</h3>
                     <span className="text-sm text-slate-500 mt-1 sm:mt-0">Mar 2019 - Mar 2022</span>
                   </div>
                   <div className="text-slate-600 font-medium mb-2">Bangladesh</div>
                   <p className="text-slate-600">
-                    Completed NEBOSH Diploma. Also trained as a Certified Personal Trainer while exploring 
-                    career transition opportunities.
+                    Pursued the NEBOSH Diploma as a deliberate investment in deepening professional expertise —
+                    the highest practitioner-level qualification in occupational health and safety, underpinning
+                    all subsequent consulting and AI safety work.
                   </p>
                 </div>
               </div>
@@ -750,7 +751,6 @@ export default function StuartClarkPortfolio() {
               </h3>
               <ul className="space-y-2 text-slate-700">
                 <li><strong>MCIEH</strong> - Member Chartered Institute of Environmental Health</li>
-                <li><strong>Certified Personal Trainer</strong></li>
               </ul>
             </div>
           </div>
