@@ -80,8 +80,8 @@ export default function StuartClarkPortfolio() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-[fadeIn_1.2s_ease-out]">
-            <a 
-              href="https://linkedin.com/in/stuart-clark-161340164" 
+            <a
+              href="https://linkedin.com/in/stuart-clark-161340164"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -89,11 +89,20 @@ export default function StuartClarkPortfolio() {
               <Linkedin size={20} />
               Connect on LinkedIn
             </a>
-            <button 
+            <a
+              href="https://github.com/stuartclark-ml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+            >
+              <ExternalLink size={20} />
+              View GitHub Profile
+            </a>
+            <button
               onClick={() => scrollToSection('project')}
               className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
             >
-              View Featured Work
+              View Projects
               <ExternalLink size={20} />
             </button>
           </div>
@@ -803,7 +812,7 @@ export default function StuartClarkPortfolio() {
 
                 <div className="mt-6 pt-6 border-t border-slate-200">
                   <div className="text-sm text-slate-600">
-                    <strong>Location:</strong> Currently based in Kathmandu, Nepal<br />
+                    <strong>Location:</strong> Kathmandu, Nepal (UTC+5:45) — available for full UK business hour overlap<br />
                     <strong>Availability:</strong> Open to remote opportunities in the UK and internationally
                   </div>
                 </div>
@@ -891,7 +900,7 @@ export default function StuartClarkPortfolio() {
           </div>
           
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-sm text-slate-400">
-            <p>© 2025 Stuart Clark. Built with care to showcase the intersection of safety expertise and AI innovation.</p>
+            <p>© 2026 Stuart Clark. Built with care to showcase the intersection of safety expertise and AI innovation.</p>
           </div>
         </div>
       </footer>
