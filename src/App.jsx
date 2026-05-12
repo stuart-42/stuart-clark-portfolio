@@ -573,8 +573,10 @@ export default function StuartClarkPortfolio() {
                 </div>
               </div>
 
-              <a 
-                href="#"
+              <a
+                href="https://drive.google.com/file/d/18ryOyvt5OazYYDM1oaCDbXEoXJAAxRjn/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <Download size={20} />
