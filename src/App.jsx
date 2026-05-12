@@ -171,15 +171,9 @@ export default function StuartClarkPortfolio() {
       <section id="project" className="min-h-screen px-6 py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600 text-white rounded-full text-sm font-medium mb-4">
-              <Award size={16} />
-              MSc Dissertation Project
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Auditing "Black Box" AI for<br />Occupational Safety
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Using NLP and Explainable AI to predict incident severity and uncover hidden biases in workplace safety models
+              Applied AI and NLP projects in occupational health and safety
             </p>
           </div>
 
@@ -305,6 +299,182 @@ export default function StuartClarkPortfolio() {
               </div>
             </div>
           </div>
+          {/* RAG Triage API */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 mt-8">
+            <div className="p-8 space-y-8">
+              <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
+                  <Award size={14} />
+                  API Project
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Care Home Incident Triage API</h3>
+                <p className="text-slate-700 leading-relaxed">
+                  A health and social care incident classification system combining fine-tuned BERT severity prediction
+                  with <strong>Retrieval-Augmented Generation</strong> to map incidents to RIDDOR 2013 regulations and
+                  HSG220 mitigation guidance — deployed on AWS ECS Fargate.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                    <Code2 size={20} className="text-blue-600" />
+                    Technical Approach
+                  </h3>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>FastAPI</strong> backend with Pydantic v2 validation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>DistilBERT</strong> classifier across five severity classes</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>ChromaDB</strong> vector store with RIDDOR, HSG220 and OSHA knowledge bases</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>Gemini 2.5 Flash</strong> LLM for regulatory reasoning and causal analysis</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                    <BarChart3 size={20} className="text-blue-600" />
+                    Key Features
+                  </h3>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Severity prediction with regulatory RIDDOR mapping</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Causal factor extraction with retrieved mitigation directions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Population-level pattern analysis from OSHA incident data</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Deployed on AWS ECS Fargate with Vercel frontend proxy</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="border-t border-slate-200 pt-6">
+                <h3 className="font-semibold text-lg mb-4">Project Resources</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                  <a
+                    href="https://github.com/stuartclark-ml/rag-triage-api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors border border-blue-600"
+                  >
+                    <ExternalLink size={20} className="flex-shrink-0" />
+                    <div>
+                      <div className="font-medium text-sm">GitHub Repository</div>
+                      <div className="text-xs text-blue-200">View source code</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* OHS Document Parser */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 mt-8">
+            <div className="p-8 space-y-8">
+              <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
+                  <Award size={14} />
+                  Document Intelligence
+                </div>
+                <h3 className="text-2xl font-bold mb-2">OHS Document Intelligence Pipeline</h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Automates extraction and structuring of compliance data from occupational health and safety
+                  certificates (LOLER, pressure vessels) using <strong>multimodal AI</strong> — replacing
+                  error-prone manual auditing with validated, machine-readable JSON output.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                    <Code2 size={20} className="text-blue-600" />
+                    Technical Approach
+                  </h3>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>Gemini 2.5 Flash</strong> multimodal reasoning over PDFs and scanned images</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>PyMuPDF</strong> with OCR for document processing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>Pydantic v2</strong> schema validation for regulatory compliance</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span><strong>FastAPI</strong> RESTful API with Streamlit demo interface</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
+                    <BarChart3 size={20} className="text-blue-600" />
+                    Key Features
+                  </h3>
+                  <ul className="space-y-2 text-slate-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Handles both text-heavy PDFs and scanned image documents</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Extracts compliance dates, equipment IDs and failure conditions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Outputs validated JSON ready for risk management system integration</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>Interactive Streamlit interface for stakeholder demonstrations</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="border-t border-slate-200 pt-6">
+                <h3 className="font-semibold text-lg mb-4">Project Resources</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                  <a
+                    href="https://github.com/stuartclark-ml/ohs-document-parser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors border border-blue-600"
+                  >
+                    <ExternalLink size={20} className="flex-shrink-0" />
+                    <div>
+                      <div className="font-medium text-sm">GitHub Repository</div>
+                      <div className="text-xs text-blue-200">View source code</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
