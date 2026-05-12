@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/stuart-clark-portfolio/static/js/main.163af88c.js",
+    "main.js": "/stuart-clark-portfolio/static/js/main.b63506cc.js",
     "index.html": "/stuart-clark-portfolio/index.html",
-    "main.163af88c.js.map": "/stuart-clark-portfolio/static/js/main.163af88c.js.map"
+    "main.b63506cc.js.map": "/stuart-clark-portfolio/static/js/main.b63506cc.js.map"
   },
   "entrypoints": [
-    "static/js/main.163af88c.js"
+    "static/js/main.b63506cc.js"
   ]
 }
