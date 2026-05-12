@@ -528,73 +528,109 @@ export default function StuartClarkPortfolio() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">ML Frameworks & Tools</span>
+                    <span className="font-medium">LLMs & Generative AI</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TensorFlow</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">PyTorch</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Scikit-learn</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Gemini 2.5 Flash</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">RAG</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Prompt Engineering</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Vector Search & Embeddings</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">ChromaDB</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Sentence Transformers</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HuggingFace</span>
                   </div>
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">Explainable AI & Optimization</span>
+                    <span className="font-medium">ML Frameworks & Explainability</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">PyTorch</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Scikit-learn</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">SHAP</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Optuna</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Model Fine-tuning</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TensorFlow</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Programming & Data Science */}
+            {/* Programming & Deployment */}
             <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-              <h3 className="text-xl font-semibold mb-6 text-blue-600">Programming & Data Science</h3>
+              <h3 className="text-xl font-semibold mb-6 text-blue-600">Programming & Deployment</h3>
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-2">
-                    <span className="font-medium">Languages</span>
+                    <span className="font-medium">Languages & Data Science</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Python</span>
                     <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Java</span>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium">Data Science Stack</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Pandas</span>
                     <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">NumPy</span>
                     <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Matplotlib</span>
                   </div>
                 </div>
-              </div>
 
-              <div className="mt-6 pt-6 border-t border-slate-200">
-                <h3 className="text-xl font-semibold mb-4 text-blue-600">Domain Expertise</h3>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Occupational Safety</span>
-                  <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Risk Management</span>
-                  <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Safety Auditing</span>
-                  <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">NEBOSH</span>
-                  <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">RIDDOR</span>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">APIs & Backend</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">FastAPI</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Pydantic v2</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Streamlit</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">REST APIs</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Cloud & Deployment</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">AWS ECS Fargate</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">AWS S3</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Vercel</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Railway</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Streamlit Cloud</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="font-medium">Document Processing</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">PyMuPDF</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">OCR</span>
+                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Multimodal AI</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-            <p className="text-slate-700 text-center">
-              <strong>Note:</strong> Technical ML/AI skills developed through intensive MSc dissertation work. 
-              Combined with 8+ years of professional safety consulting experience.
-            </p>
+          <div className="mt-8 bg-slate-50 p-8 rounded-xl border border-slate-200">
+            <h3 className="text-xl font-semibold mb-4 text-blue-600">Domain Expertise</h3>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Occupational Safety</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Risk Management</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Safety Auditing</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">NEBOSH</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">RIDDOR</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">HSG220</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Regulatory Compliance</span>
+              <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Health & Social Care</span>
+            </div>
           </div>
         </div>
       </section>
