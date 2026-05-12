@@ -374,12 +374,25 @@ export default function StuartClarkPortfolio() {
                     href="https://github.com/stuartclark-ml/rag-triage-api"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200"
+                  >
+                    <ExternalLink size={20} className="text-blue-600 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium text-sm">GitHub Repository</div>
+                      <div className="text-xs text-slate-500">View source code</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://rag-triage.vercel.app/app.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors border border-blue-600"
                   >
                     <ExternalLink size={20} className="flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-sm">GitHub Repository</div>
-                      <div className="text-xs text-blue-200">View source code</div>
+                      <div className="font-medium text-sm">Live Demo</div>
+                      <div className="text-xs text-blue-200">Try the app</div>
                     </div>
                   </a>
                 </div>
@@ -462,12 +475,25 @@ export default function StuartClarkPortfolio() {
                     href="https://github.com/stuartclark-ml/ohs-document-parser"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200"
+                  >
+                    <ExternalLink size={20} className="text-blue-600 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium text-sm">GitHub Repository</div>
+                      <div className="text-xs text-slate-500">View source code</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://comfortable-achievement-production.up.railway.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors border border-blue-600"
                   >
                     <ExternalLink size={20} className="flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-sm">GitHub Repository</div>
-                      <div className="text-xs text-blue-200">View source code</div>
+                      <div className="font-medium text-sm">Live Demo</div>
+                      <div className="text-xs text-blue-200">Try the app</div>
                     </div>
                   </a>
                 </div>
