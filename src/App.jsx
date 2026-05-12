@@ -183,9 +183,9 @@ export default function StuartClarkPortfolio() {
               <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
                 <h3 className="font-semibold text-lg mb-2 text-blue-900">Key Finding</h3>
                 <p className="text-slate-700 leading-relaxed">
-                  While AI modeling proved unreliable as a standalone classifier, it becomes a powerful 
-                  <strong> decision-support tool</strong> when combined with Explainable AI (SHAP) to audit 
-                  dangerous hidden biases in workplace safety predictions.
+                  XAI (SHAP) unlocks AI as a powerful <strong>decision-support tool</strong> for occupational
+                  safety — revealing hidden model biases and enabling responsible deployment where standalone
+                  classifiers fall short.
                 </p>
               </div>
 
