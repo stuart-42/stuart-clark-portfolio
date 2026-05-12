@@ -275,7 +275,7 @@ export default function StuartClarkPortfolio() {
                   </a>
 
                   <a 
-                    href="#" 
+                    href="https://drive.google.com/file/d/1ll8vbcf9DV81KRcw7zyJ377UnJayBpHx/view?usp=sharing" 
                     className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200"
                   >
                     <Video size={20} className="text-blue-600 flex-shrink-0" />
@@ -286,7 +286,7 @@ export default function StuartClarkPortfolio() {
                   </a>
 
                   <a 
-                    href="#" 
+                    href="https://drive.google.com/file/d/1kHNKfcP-Y4zqyK3o6VJdwJrRIxR61Wjh/view?usp=sharing" 
                     className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors border border-slate-200"
                   >
                     <BarChart3 size={20} className="text-blue-600 flex-shrink-0" />
