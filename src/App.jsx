@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Linkedin, Download, ExternalLink, ChevronDown, FileText, Video, BarChart3, Code2, Award } from 'lucide-react';
+import { Mail, Linkedin, Download, ExternalLink, ChevronDown, FileText, Video, BarChart3, Code2, Award, Menu, X } from 'lucide-react';
 
 export default function StuartClarkPortfolio() {
   const [activeSection, setActiveSection] = useState('home');
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +30,7 @@ export default function StuartClarkPortfolio() {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -59,13 +61,52 @@ export default function StuartClarkPortfolio() {
                 </button>
               ))}
             </div>
+            <button
+              className="md:hidden p-2 text-slate-600 hover:text-slate-900 transition-colors"
+              onClick={() => setMobileMenuOpen(o => !o)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-slate-200 px-6 py-4 space-y-1">
+            {['home', 'about', 'project', 'skills', 'experience', 'contact'].map(section => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`block w-full text-left py-3 capitalize text-sm transition-colors border-b border-slate-100 last:border-0 ${
+                  activeSection === section ? 'text-blue-600 font-medium' : 'text-slate-600'
+                }`}
+              >
+                {section}
+              </button>
+            ))}
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center mb-6 animate-[fadeIn_0.5s_ease-out]">
+            <img
+              src="/headshot.jpg"
+              alt="Stuart Clark"
+              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-lg"
+              onError={e => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.nextElementSibling.style.display = 'flex';
+              }}
+            />
+            <div
+              className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-blue-600 border-4 border-white shadow-lg items-center justify-center text-white text-3xl md:text-4xl font-bold"
+              style={{ display: 'none' }}
+            >
+              SC
+            </div>
+          </div>
           <div className="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6 animate-[fadeIn_0.6s_ease-out]">
             Open to Opportunities
           </div>
@@ -189,6 +230,15 @@ export default function StuartClarkPortfolio() {
 
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
             <div className="p-8 space-y-8">
+              {/* Dissertation Title */}
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
+                  <Award size={14} />
+                  MSc Dissertation
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Predicting Incident Severity from Safety Reports Using Transformer Models and Explainable AI</h3>
+                <p className="text-slate-600">Fine-tuned BERT-family models on 180,000+ OSHA incident records to classify severity, using SHAP to surface model reasoning and enable responsible deployment as a decision-support tool.</p>
+              </div>
               {/* Key Finding */}
               <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
                 <h3 className="font-semibold text-lg mb-2 text-blue-900">Key Finding</h3>
