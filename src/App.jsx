@@ -729,7 +729,7 @@ export default function StuartClarkPortfolio() {
                   </div>
                   <div className="text-amber-600 font-medium mb-2">NAVITAS/ESB</div>
                   <p className="text-slate-600 mb-3">
-                    <strong>8 years</strong> of comprehensive experience in occupational health and safety consulting, 
+                    <strong>18 years</strong> of comprehensive experience in occupational health and safety consulting, 
                     risk management, and compliance auditing across diverse industries.
                   </p>
                   <div className="text-sm text-slate-600">
