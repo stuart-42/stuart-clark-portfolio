@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/stuart-clark-portfolio/static/js/main.74f834c2.js",
-    "index.html": "/stuart-clark-portfolio/index.html",
-    "main.74f834c2.js.map": "/stuart-clark-portfolio/static/js/main.74f834c2.js.map"
+    "main.js": "/static/js/main.74f834c2.js",
+    "index.html": "/index.html",
+    "main.74f834c2.js.map": "/static/js/main.74f834c2.js.map"
   },
   "entrypoints": [
     "static/js/main.74f834c2.js"
