@@ -45,7 +45,7 @@ export default function StuartClarkPortfolio() {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md border-b border-slate-200 z-40 mt-1">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="font-semibold text-lg tracking-tight">Stuart Clark</div>
             <div className="hidden md:flex gap-8 text-sm">
@@ -88,77 +88,73 @@ export default function StuartClarkPortfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-6 animate-[fadeIn_0.5s_ease-out]">
-            <img
-              src="/headshot.jpg"
-              alt="Stuart Clark"
-              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-lg"
-              onError={e => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling.style.display = 'flex';
-              }}
-            />
-            <div
-              className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-blue-600 border-4 border-white shadow-lg items-center justify-center text-white text-3xl md:text-4xl font-bold"
-              style={{ display: 'none' }}
-            >
-              SC
+      <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-16">
+        <div className="max-w-4xl mx-auto w-full">
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+            <div className="flex-shrink-0 flex justify-center md:justify-start animate-[fadeIn_0.5s_ease-out]">
+              <img
+                src="/headshot.jpg"
+                alt="Stuart Clark"
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-lg"
+                onError={e => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <div
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-blue-600 border-4 border-white shadow-lg items-center justify-center text-white text-3xl md:text-4xl font-bold"
+                style={{ display: 'none' }}
+              >
+                SC
+              </div>
+            </div>
+            <div className="flex-1">
+              <div className="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6 animate-[fadeIn_0.6s_ease-out]">
+                Open to Opportunities
+              </div>
+
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-[fadeIn_0.8s_ease-out] leading-tight">
+                From Safety Expert<br />
+                <span className="text-blue-600">to AI Engineer</span>
+              </h1>
+
+              <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl animate-[fadeIn_1s_ease-out] leading-relaxed">
+                Bridging 18+ years of occupational safety consulting with cutting-edge machine learning to solve real-world problems
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 items-start animate-[fadeIn_1.2s_ease-out]">
+                <a
+                  href="https://linkedin.com/in/stuart-clark-161340164"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <Linkedin size={20} />
+                  Connect on LinkedIn
+                </a>
+                <button
+                  onClick={() => scrollToSection('project')}
+                  className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+                >
+                  View Projects
+                  <ExternalLink size={20} />
+                </button>
+              </div>
             </div>
           </div>
-          <div className="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6 animate-[fadeIn_0.6s_ease-out]">
-            Open to Opportunities
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-[fadeIn_0.8s_ease-out] leading-tight">
-            From Safety Expert<br />
-            <span className="text-blue-600">to AI Engineer</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto animate-[fadeIn_1s_ease-out] leading-relaxed">
-            Bridging 8+ years of occupational safety consulting with cutting-edge machine learning to solve real-world problems
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-[fadeIn_1.2s_ease-out]">
-            <a
-              href="https://linkedin.com/in/stuart-clark-161340164"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              <Linkedin size={20} />
-              Connect on LinkedIn
-            </a>
-            <a
-              href="https://github.com/stuartclark-ml"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
-            >
-              <ExternalLink size={20} />
-              View GitHub Profile
-            </a>
+          <div className="flex justify-center mt-16">
             <button
-              onClick={() => scrollToSection('project')}
-              className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
+              onClick={() => scrollToSection('about')}
+              className="animate-bounce text-slate-400 hover:text-slate-600 transition-colors"
             >
-              View Projects
-              <ExternalLink size={20} />
+              <ChevronDown size={32} />
             </button>
           </div>
-
-          <button 
-            onClick={() => scrollToSection('about')}
-            className="mt-16 animate-bounce text-slate-400 hover:text-slate-600 transition-colors"
-          >
-            <ChevronDown size={32} />
-          </button>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center px-6 py-20 bg-white">
+      <section id="about" className="flex items-center px-6 py-24 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12">About Me</h2>
           
@@ -229,7 +225,7 @@ export default function StuartClarkPortfolio() {
           </div>
 
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-            <div className="p-8 space-y-8">
+            <div className="p-6 space-y-6">
               {/* Dissertation Title */}
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
@@ -361,7 +357,7 @@ export default function StuartClarkPortfolio() {
           </div>
           {/* RAG Triage API */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 mt-8">
-            <div className="p-8 space-y-8">
+            <div className="p-6 space-y-6">
               <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
                   <Award size={14} />
@@ -462,7 +458,7 @@ export default function StuartClarkPortfolio() {
 
           {/* OHS Document Parser */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200 mt-8">
-            <div className="p-8 space-y-8">
+            <div className="p-6 space-y-6">
               <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium mb-3">
                   <Award size={14} />
@@ -565,7 +561,7 @@ export default function StuartClarkPortfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="min-h-screen flex items-center px-6 py-20 bg-white">
+      <section id="skills" className="flex items-center px-6 py-24 bg-white">
         <div className="max-w-5xl mx-auto w-full">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Technical Skills</h2>
           
@@ -696,7 +692,7 @@ export default function StuartClarkPortfolio() {
       </section>
 
       {/* Experience Timeline */}
-      <section id="experience" className="min-h-screen px-6 py-20 bg-slate-50">
+      <section id="experience" className="px-6 py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Professional Journey</h2>
 
@@ -707,7 +703,7 @@ export default function StuartClarkPortfolio() {
             {/* Timeline Items */}
             <div className="space-y-12">
               {/* Current - MSc Student */}
-              <div className="relative pl-20">
+              <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -723,7 +719,7 @@ export default function StuartClarkPortfolio() {
               </div>
 
               {/* Full-time Parent */}
-              <div className="relative pl-20">
+              <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -738,7 +734,7 @@ export default function StuartClarkPortfolio() {
               </div>
 
               {/* Consultant */}
-              <div className="relative pl-20">
+              <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -753,7 +749,7 @@ export default function StuartClarkPortfolio() {
               </div>
 
               {/* NEBOSH & Career Development */}
-              <div className="relative pl-20">
+              <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -770,7 +766,7 @@ export default function StuartClarkPortfolio() {
               </div>
 
               {/* Senior Consultant - Main Career */}
-              <div className="relative pl-20">
+              <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-amber-500 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -818,7 +814,7 @@ export default function StuartClarkPortfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center px-6 py-20 bg-white">
+      <section id="contact" className="flex items-center px-6 py-24 bg-white">
         <div className="max-w-4xl mx-auto w-full">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
