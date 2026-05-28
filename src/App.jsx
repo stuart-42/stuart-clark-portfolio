@@ -1,6 +1,55 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Linkedin, Download, ExternalLink, ChevronDown, FileText, Video, BarChart3, Code2, Award, Menu, X } from 'lucide-react';
 
+const SKILL_ICONS = {
+  Python: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+  PyTorch: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
+  TensorFlow: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg',
+  'Scikit-learn': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg',
+  Pandas: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg',
+  NumPy: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg',
+  Matplotlib: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg',
+  Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+  FastAPI: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',
+  Streamlit: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg',
+  'Streamlit Cloud': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg',
+  'AWS ECS Fargate': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+  'AWS S3': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+};
+
+const HF_SKILLS = new Set(['BERT', 'DistilBERT', 'ModernBERT', 'Transformers', 'HuggingFace', 'Sentence Transformers']);
+
+const HuggingFaceIcon = () => (
+  <svg width="13" height="13" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="16" cy="16" r="16" fill="#FFD21E"/>
+    <ellipse cx="11.5" cy="15" rx="3" ry="3.5" fill="white"/>
+    <ellipse cx="20.5" cy="15" rx="3" ry="3.5" fill="white"/>
+    <circle cx="11.5" cy="15.5" r="1.5" fill="#1A1A1A"/>
+    <circle cx="20.5" cy="15.5" r="1.5" fill="#1A1A1A"/>
+    <path d="M10 22.5C11.5 24 13.5 25 16 25s4.5-1 6-2.5C20.3 23 18.3 23.5 16 23.5S11.7 23 10 22.5z" fill="#1A1A1A"/>
+  </svg>
+);
+
+const VercelIcon = () => (
+  <svg width="11" height="10" viewBox="0 0 76 65" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/>
+  </svg>
+);
+
+const SkillTag = ({ label, colorClass }) => {
+  const src = SKILL_ICONS[label];
+  const isHF = HF_SKILLS.has(label);
+  const isVercel = label === 'Vercel';
+  return (
+    <span className={`inline-flex items-center gap-1.5 px-3 py-1 ${colorClass} rounded-full text-sm`}>
+      {isHF && <HuggingFaceIcon />}
+      {isVercel && <VercelIcon />}
+      {!isHF && !isVercel && src && <img src={src} alt="" width="13" height="13" className="flex-shrink-0" />}
+      {label}
+    </span>
+  );
+};
+
 export default function StuartClarkPortfolio() {
   const [activeSection, setActiveSection] = useState('home');
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -93,7 +142,7 @@ export default function StuartClarkPortfolio() {
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
             <div className="flex-shrink-0 flex justify-center md:justify-start animate-[fadeIn_0.5s_ease-out]">
               <img
-                src="/headshot.jpg"
+                src="/headshot.png"
                 alt="Stuart Clark"
                 className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-lg"
                 onError={e => {
@@ -166,7 +215,7 @@ export default function StuartClarkPortfolio() {
               </p>
               
               <p className="text-lg text-slate-700 leading-relaxed">
-                After 8+ years managing workplace safety across diverse industries, I recognized how AI could 
+                After 18 years managing workplace safety across diverse industries, I recognized how AI could 
                 transform risk management. This led me to pursue advanced studies in machine learning and natural 
                 language processing.
               </p>
@@ -235,6 +284,22 @@ export default function StuartClarkPortfolio() {
                 <h3 className="text-2xl font-bold mb-2">Predicting Incident Severity from Safety Reports Using Transformer Models and Explainable AI</h3>
                 <p className="text-slate-600">Fine-tuned BERT-family models on 180,000+ OSHA incident records to classify severity, using SHAP to surface model reasoning and enable responsible deployment as a decision-support tool.</p>
               </div>
+              {/* Metrics Strip */}
+              <div className="grid grid-cols-3 divide-x divide-slate-700 bg-gradient-to-r from-slate-900 to-blue-950 text-white rounded-lg overflow-hidden">
+                <div className="px-4 py-5 text-center">
+                  <div className="text-2xl font-bold text-blue-300">180,000+</div>
+                  <div className="text-xs text-slate-400 mt-1 uppercase tracking-wide">OSHA records</div>
+                </div>
+                <div className="px-4 py-5 text-center">
+                  <div className="text-2xl font-bold text-blue-300">5</div>
+                  <div className="text-xs text-slate-400 mt-1 uppercase tracking-wide">severity classes</div>
+                </div>
+                <div className="px-4 py-5 text-center">
+                  <div className="text-2xl font-bold text-blue-300">3</div>
+                  <div className="text-xs text-slate-400 mt-1 uppercase tracking-wide">transformer models</div>
+                </div>
+              </div>
+
               {/* Key Finding */}
               <div className="bg-gradient-to-r from-blue-50 to-slate-50 p-6 rounded-lg border-l-4 border-blue-600">
                 <h3 className="font-semibold text-lg mb-2 text-blue-900">Key Finding</h3>
@@ -245,6 +310,21 @@ export default function StuartClarkPortfolio() {
                 </p>
               </div>
 
+               <a href="https://drive.google.com/file/d/1kHNKfcP-Y4zqyK3o6VJdwJrRIxR61Wjh/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block overflow-hidden rounded-lg border border-slate-200 hover:shadow-lg transition-shadow"
+               > 
+                <img
+                  src="/infographic.png"
+                  alt="Dissertation infographic"
+                  className="w-full object-cover object-top h-48"
+                />
+                <div className="p-3 bg-slate-50 text-sm text-center text-slate-600 flex items-center justify-center gap-2">
+                  <ExternalLink size={14} />
+                  View full infographic
+                </div>
+              </a>
               {/* Technical Overview */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -575,10 +655,10 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">Natural Language Processing</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">BERT</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">DistilBERT</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">ModernBERT</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Transformers</span>
+                    <SkillTag label="BERT" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="DistilBERT" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="ModernBERT" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="Transformers" colorClass="bg-blue-100 text-blue-700" />
                   </div>
                 </div>
 
@@ -587,9 +667,9 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">LLMs & Generative AI</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Gemini 2.5 Flash</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">RAG</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Prompt Engineering</span>
+                    <SkillTag label="Gemini 2.5 Flash" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="RAG" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="Prompt Engineering" colorClass="bg-blue-100 text-blue-700" />
                   </div>
                 </div>
 
@@ -598,9 +678,9 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">Vector Search & Embeddings</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">ChromaDB</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Sentence Transformers</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">HuggingFace</span>
+                    <SkillTag label="ChromaDB" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="Sentence Transformers" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="HuggingFace" colorClass="bg-blue-100 text-blue-700" />
                   </div>
                 </div>
 
@@ -609,11 +689,11 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">ML Frameworks & Explainability</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">PyTorch</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Scikit-learn</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">SHAP</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Optuna</span>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TensorFlow</span>
+                    <SkillTag label="PyTorch" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="Scikit-learn" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="SHAP" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="Optuna" colorClass="bg-blue-100 text-blue-700" />
+                    <SkillTag label="TensorFlow" colorClass="bg-blue-100 text-blue-700" />
                   </div>
                 </div>
               </div>
@@ -628,11 +708,11 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">Languages & Data Science</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Python</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Java</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Pandas</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">NumPy</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Matplotlib</span>
+                    <SkillTag label="Python" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Java" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Pandas" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="NumPy" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Matplotlib" colorClass="bg-slate-200 text-slate-700" />
                   </div>
                 </div>
 
@@ -641,10 +721,10 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">APIs & Backend</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">FastAPI</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Pydantic v2</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Streamlit</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">REST APIs</span>
+                    <SkillTag label="FastAPI" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Pydantic v2" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Streamlit" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="REST APIs" colorClass="bg-slate-200 text-slate-700" />
                   </div>
                 </div>
 
@@ -653,11 +733,11 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">Cloud & Deployment</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">AWS ECS Fargate</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">AWS S3</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Vercel</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Railway</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Streamlit Cloud</span>
+                    <SkillTag label="AWS ECS Fargate" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="AWS S3" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Vercel" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Railway" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Streamlit Cloud" colorClass="bg-slate-200 text-slate-700" />
                   </div>
                 </div>
 
@@ -666,9 +746,9 @@ export default function StuartClarkPortfolio() {
                     <span className="font-medium">Document Processing</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">PyMuPDF</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">OCR</span>
-                    <span className="px-3 py-1 bg-slate-200 text-slate-700 rounded-full text-sm">Multimodal AI</span>
+                    <SkillTag label="PyMuPDF" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="OCR" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="Multimodal AI" colorClass="bg-slate-200 text-slate-700" />
                   </div>
                 </div>
               </div>
@@ -773,14 +853,14 @@ export default function StuartClarkPortfolio() {
                     <h3 className="text-xl font-semibold">Senior Health and Safety Consultant</h3>
                     <span className="text-sm text-slate-500 mt-1 sm:mt-0">May 2011 - Mar 2019</span>
                   </div>
-                  <div className="text-amber-600 font-medium mb-2">NAVITAS/ESB</div>
+                  <div className="text-amber-600 font-medium mb-2">NAVITAS/Local Government</div>
                   <p className="text-slate-600 mb-3">
-                    <strong>18 years</strong> of comprehensive experience in occupational health and safety consulting, 
-                    risk management, and compliance auditing across diverse industries.
+                    <strong>18 years</strong> of comprehensive experience in occupational health and safety Food Safety consulting, 
+                    risk management, and compliance auditing across diverse industries. Including local goverment public health enforecement. 
                   </p>
                   <div className="text-sm text-slate-600">
-                    Key responsibilities included site inspections, risk assessments, safety audits, policy development, 
-                    and training delivery. This experience forms the foundation for my current AI/ML work in safety tech.
+                    Key responsibilities included site inspections, risk assessments, safety audits, policy development, enfocement action, grant administration,
+                    and training delivery. 
                   </div>
                 </div>
               </div>
