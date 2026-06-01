@@ -359,7 +359,7 @@ export default function StuartClarkPortfolio() {
                   <img
                     src="/infographic.png"
                     alt="Dissertation infographic"
-                    className="w-full object-cover object-top h-[531px]"
+                    className="w-full object-contain object-top h-[531px]"
                   />
                   <div className="p-3 bg-slate-50 text-sm text-center text-slate-600 flex items-center justify-center gap-2">
                     <ExternalLink size={14} />
