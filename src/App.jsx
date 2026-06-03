@@ -254,9 +254,8 @@ export default function StuartClarkPortfolio() {
               <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <h3 className="font-semibold text-lg mb-2">Currently Seeking</h3>
                 <p className="text-slate-700">
-                  Junior or entry-level Machine Learning Engineer and Software Engineer (Python/ML) roles
-                  where domain expertise in safety, NLP, and risk analysis adds immediate value. Open to
-                  structured graduate schemes with a strong ML focus.
+                  ML Engineer roles in RegTech, risk-tech, insurtech, or AI governance — remote, UK-based.
+                  Domain expertise in regulated, high-stakes environments is my differentiator.
                 </p>
               </div>
             </div>
@@ -332,7 +331,11 @@ export default function StuartClarkPortfolio() {
                   <ul className="space-y-2 text-slate-700">
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1.5 text-xs">▸</span>
-                      <span>Models excelled at extremes (High Severity / No Harm)</span>
+                      <span>Macro-Avg AUC-ROC: 0.77–0.78 · Log Loss: 1.07</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
+                      <span>None class F1: 0.81 / AUC: 0.88 · Major recall: 0.60 / AUC: 0.80</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1.5 text-xs">▸</span>
@@ -340,11 +343,7 @@ export default function StuartClarkPortfolio() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-blue-600 mt-1.5 text-xs">▸</span>
-                      <span>Revealed textual distinctiveness is as critical as model complexity</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600 mt-1.5 text-xs">▸</span>
-                      <span>XAI showed models err on side of caution (predict Major over Minor)</span>
+                      <span>Strong performance at safety-critical extremes — models show a precautionary bias, systematically misclassifying toward Major rather than None. SHAP confirmed this is learned from narrative richness: the correct failure mode for triage in regulated environments.</span>
                     </li>
                   </ul>
                 </div>
@@ -784,9 +783,9 @@ export default function StuartClarkPortfolio() {
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                     <h3 className="text-xl font-semibold">Career Break - Full-time Parenting</h3>
-                    <span className="text-sm text-slate-500 mt-1 sm:mt-0">Sep 2022 - Present</span>
+                    <span className="text-sm text-slate-500 mt-1 sm:mt-0">Sep 2022 – Oct 2023</span>
                   </div>
-                  <div className="text-slate-600 font-medium mb-2">Kathmandu, Nepal</div>
+                  <div className="text-slate-600 font-medium mb-2">Remote / UK-based (UTC+5)</div>
                   <p className="text-slate-600">
                     Balancing family responsibilities while pursuing advanced education in AI and computer science.
                   </p>
@@ -816,7 +815,7 @@ export default function StuartClarkPortfolio() {
                     <h3 className="text-xl font-semibold">NEBOSH Diploma — Advanced Professional Development</h3>
                     <span className="text-sm text-slate-500 mt-1 sm:mt-0">Mar 2019 - Mar 2022</span>
                   </div>
-                  <div className="text-slate-600 font-medium mb-2">Bangladesh</div>
+                  <div className="text-slate-600 font-medium mb-2">Remote / UK-based</div>
                   <p className="text-slate-600">
                     Pursued the NEBOSH Diploma as a deliberate investment in deepening professional expertise —
                     the highest practitioner-level qualification in occupational health and safety, underpinning
@@ -911,14 +910,14 @@ export default function StuartClarkPortfolio() {
                     </div>
                     <div>
                       <div className="font-medium">Email</div>
-                      <div className="text-sm text-slate-500">Available via LinkedIn</div>
+                      <div className="text-sm text-slate-500">stuartclarkfc@gmail.com</div>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-slate-200">
                   <div className="text-sm text-slate-600">
-                    <strong>Location:</strong> Kathmandu, Nepal (UTC+5:45) — available for full UK business hour overlap<br />
+                    <strong>Location:</strong> Remote / UK-based (UTC+5)<br />
                     <strong>Availability:</strong> Open to remote opportunities in the UK and internationally
                   </div>
                 </div>
@@ -941,15 +940,11 @@ export default function StuartClarkPortfolio() {
                 <ul className="space-y-3 text-slate-700">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>Machine Learning Engineer</strong> - Junior or entry-level, with a safety, NLP, or risk focus</span>
+                    <span><strong>ML Engineer</strong> - RegTech, risk-tech, insurtech, or AI governance — remote, UK-based</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 mt-1 font-bold">•</span>
                     <span><strong>Software Engineer (Python/ML)</strong> - Building intelligent systems and data pipelines</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-blue-600 mt-1 font-bold">•</span>
-                    <span><strong>Graduate Schemes</strong> - Structured ML or AI programmes at tech or safety-focused organisations</span>
                   </li>
                 </ul>
               </div>
@@ -989,7 +984,7 @@ export default function StuartClarkPortfolio() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
               <div className="text-white font-semibold text-lg mb-2">Stuart Clark</div>
-              <div className="text-sm">Aspiring AI Engineer | Machine Learning | Health & Safety Expert</div>
+              <div className="text-sm">ML Engineer | Explainable AI | Risk & Compliance</div>
             </div>
             
             <div className="flex gap-4">
