@@ -765,7 +765,7 @@ export default function StuartClarkPortfolio() {
                 <div className="absolute left-5 top-2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white hidden md:block" />
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <h3 className="text-xl font-semibold">MSc Computer Science with AI — Distinction</h3>
+                    <h3 className="text-xl font-semibold">MSc Computer Science with AI — First Class</h3>
                     <span className="text-sm text-slate-500 mt-1 sm:mt-0">Oct 2023 – 2026</span>
                   </div>
                   <div className="text-blue-600 font-medium mb-2">Northumbria University (Distance Learning)</div>
@@ -853,7 +853,7 @@ export default function StuartClarkPortfolio() {
                 Education
               </h3>
               <ul className="space-y-2 text-slate-700">
-                <li><strong>MSc Computer Science with AI — Distinction</strong> - Northumbria University (2023–2026)</li>
+                <li><strong>MSc Computer Science with AI — First Class</strong> - Northumbria University (2023–2026)</li>
                 <li><strong>NEBOSH Diploma</strong> - DipNEBOSH</li>
               </ul>
             </div>
