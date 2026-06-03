@@ -164,12 +164,12 @@ export default function StuartClarkPortfolio() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-[fadeIn_0.8s_ease-out] leading-tight">
-                From Safety Expert<br />
-                <span className="text-blue-600">to AI Engineer</span>
+                ML Engineer for<br />
+                <span className="text-blue-600">regulated, high-stakes domains</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-2xl animate-[fadeIn_1s_ease-out] leading-relaxed">
-                Bridging 18 years of occupational safety consulting with cutting-edge machine learning to solve real-world problems
+                Production NLP + SHAP explainability + 14 years of compliance fluency. Built for RegTech.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 items-start animate-[fadeIn_1.2s_ease-out]">
