@@ -9,6 +9,7 @@ const SKILL_ICONS = {
   Pandas: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg',
   NumPy: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg',
   Matplotlib: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg',
+  SQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
   Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
   FastAPI: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',
   Streamlit: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg',
@@ -687,6 +688,7 @@ export default function StuartClarkPortfolio() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <SkillTag label="Python" colorClass="bg-slate-200 text-slate-700" />
+                    <SkillTag label="SQL" colorClass="bg-slate-200 text-slate-700" />
                     <SkillTag label="Java" colorClass="bg-slate-200 text-slate-700" />
                     <SkillTag label="Pandas" colorClass="bg-slate-200 text-slate-700" />
                     <SkillTag label="NumPy" colorClass="bg-slate-200 text-slate-700" />
