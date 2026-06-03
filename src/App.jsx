@@ -107,7 +107,7 @@ export default function StuartClarkPortfolio() {
                     activeSection === section ? 'text-blue-600 font-medium' : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  {section}
+                  {section === 'project' ? 'Projects' : section}
                 </button>
               ))}
             </div>
@@ -130,7 +130,7 @@ export default function StuartClarkPortfolio() {
                   activeSection === section ? 'text-blue-600 font-medium' : 'text-slate-600'
                 }`}
               >
-                {section}
+                {section === 'project' ? 'Projects' : section}
               </button>
             ))}
           </div>
@@ -174,21 +174,23 @@ export default function StuartClarkPortfolio() {
 
               <div className="flex flex-col sm:flex-row gap-4 items-start animate-[fadeIn_1.2s_ease-out]">
                 <a
-                  href="https://linkedin.com/in/stuart-clark-161340164"
+                  href="https://rag-triage.vercel.app/app.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  <Linkedin size={20} />
-                  Connect on LinkedIn
+                  <ExternalLink size={20} />
+                  View Live Demo
                 </a>
-                <button
-                  onClick={() => scrollToSection('project')}
+                <a
+                  href="https://drive.google.com/file/d/1KnqiMBgV2T_Ur_c415AcwxtDlS6pHMHw/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 border-2 border-slate-300 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors"
                 >
-                  View Projects
-                  <ExternalLink size={20} />
-                </button>
+                  <FileText size={20} />
+                  Read the Dissertation
+                </a>
               </div>
             </div>
           </div>
@@ -407,9 +409,6 @@ export default function StuartClarkPortfolio() {
                     </div>
                   </a>
                 </div>
-                <p className="text-sm text-slate-500 mt-4 italic">
-                  Note: Project materials will be made available upon request
-                </p>
               </div>
             </div>
           </div>
@@ -835,10 +834,10 @@ export default function StuartClarkPortfolio() {
                   <div className="text-amber-600 font-medium mb-2">NAVITAS/Local Government</div>
                   <p className="text-slate-600 mb-3">
                     <strong>18 years</strong> of comprehensive experience in occupational health and safety Food Safety consulting, 
-                    risk management, and compliance auditing across diverse industries. Including local goverment public health enforecement. 
+                    risk management, and compliance auditing across diverse industries. Including local government public health enforcement.
                   </p>
                   <div className="text-sm text-slate-600">
-                    Key responsibilities included site inspections, risk assessments, safety audits, policy development, enfocement action, grant administration,
+                    Key responsibilities included site inspections, risk assessments, safety audits, policy development, enforcement action, grant administration,
                     and training delivery. 
                   </div>
                 </div>
