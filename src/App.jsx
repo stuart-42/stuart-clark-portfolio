@@ -583,56 +583,74 @@ export default function StuartClarkPortfolio() {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
-                    <Code2 size={20} className="text-slate-700" />
-                    Technical Approach
-                  </h3>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>Gemini 2.5 Flash</strong> multimodal reasoning over PDFs and scanned images</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>PyMuPDF</strong> with OCR for document processing</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>Pydantic v2</strong> schema validation for regulatory compliance</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>FastAPI</strong> RESTful API with Streamlit demo interface</span>
-                    </li>
-                  </ul>
+              <div className="grid md:grid-cols-2 gap-6 items-start">
+                {/* Left: Technical Approach + Key Features stacked */}
+                <div className="flex flex-col gap-6">
+                  <div>
+                    <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
+                      <Code2 size={20} className="text-slate-700" />
+                      Technical Approach
+                    </h3>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>Gemini 2.5 Flash</strong> multimodal reasoning over PDFs and scanned images</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>PyMuPDF</strong> with OCR for document processing</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>Pydantic v2</strong> schema validation for regulatory compliance</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>FastAPI</strong> RESTful API with Streamlit demo interface</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
+                      <BarChart3 size={20} className="text-slate-700" />
+                      Key Features
+                    </h3>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Handles both text-heavy PDFs and scanned image documents</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Extracts compliance dates, equipment IDs and failure conditions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Outputs validated JSON ready for risk management system integration</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Interactive Streamlit interface for stakeholder demonstrations</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
-                    <BarChart3 size={20} className="text-slate-700" />
-                    Key Features
-                  </h3>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Handles both text-heavy PDFs and scanned image documents</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Extracts compliance dates, equipment IDs and failure conditions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Outputs validated JSON ready for risk management system integration</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Interactive Streamlit interface for stakeholder demonstrations</span>
-                    </li>
-                  </ul>
-                </div>
+                {/* Right: Document parser screenshot */}
+                <a
+                  href="https://comfortable-achievement-production.up.railway.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
+                >
+                  <img
+                    src="/documentParsar.png"
+                    alt="OHS Document Intelligence Pipeline"
+                    className="w-full object-contain"
+                  />
+                  <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Multimodal extraction · LOLER / pressure vessel certificates → validated JSON</p>
+                </a>
               </div>
 
               <div className="border-t border-slate-200 pt-6">
