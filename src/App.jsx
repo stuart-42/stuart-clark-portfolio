@@ -767,27 +767,12 @@ export default function StuartClarkPortfolio() {
                 <div className="bg-white p-6 border border-slate-200">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                     <h3 className="text-xl font-semibold text-slate-900">MSc Computer Science with AI — First Class</h3>
-                    <span className="text-sm text-slate-500 mt-1 sm:mt-0 font-mono">Oct 2023 – 2026</span>
+                    <span className="text-sm text-slate-500 mt-1 sm:mt-0 font-mono">Sep 2022 – 2026</span>
                   </div>
                   <div className="text-blue-600 font-medium mb-2">Northumbria University (Distance Learning)</div>
                   <p className="text-slate-700">
-                    Specialising in Machine Learning and Natural Language Processing. Dissertation focused on
-                    applying Transformer models and Explainable AI to workplace safety incident prediction.
-                  </p>
-                </div>
-              </div>
-
-              {/* Full-time Parent */}
-              <div className="relative md:pl-20 pl-0">
-                <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
-                <div className="bg-white p-6 border border-slate-200">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-slate-900">Career Break - Full-time Parenting</h3>
-                    <span className="text-sm text-slate-500 mt-1 sm:mt-0 font-mono">Sep 2022 – Oct 2023</span>
-                  </div>
-                  <div className="text-slate-700 font-medium mb-2">Remote / UK-based </div>
-                  <p className="text-slate-700">
-                    Balancing family responsibilities while pursuing advanced education in AI and computer science.
+                    Distance learning chosen deliberately to combine MSc study with parenting commitments. Specialising in Machine Learning and Natural Language Processing.
+                     Dissertation applied Transformer models and Explainable AI to workplace safety incident prediction.
                   </p>
                 </div>
               </div>
@@ -802,24 +787,8 @@ export default function StuartClarkPortfolio() {
                   </div>
                   <div className="text-slate-700 font-medium mb-2">Remote / UK-based</div>
                   <p className="text-slate-700">
-                    Pursued the NEBOSH Diploma as a deliberate investment in deepening professional expertise —
-                    the highest practitioner-level qualification in occupational health and safety, underpinning
-                    all subsequent consulting and AI safety work.
-                  </p>
-                </div>
-              </div>
-
-              {/* Consultant */}
-              <div className="relative md:pl-20 pl-0">
-                <div className="absolute left-5 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white hidden md:block" />
-                <div className="bg-white p-6 border border-slate-200">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-slate-900">Health & Safety Consultant</h3>
-                    <span className="text-sm text-slate-500 mt-1 sm:mt-0 font-mono">Mar 2022 – Sep 2022</span>
-                  </div>
-                  <div className="text-slate-700 font-medium mb-2">Self-employed</div>
-                  <p className="text-slate-700">
-                    Provided independent consulting on food safety, health and safety, and site inspections.
+                    Primary carer for young family from Sep 2022-2026. Pursued the NEBOSH Diploma deepening professional expertise —
+                    the highest practitioner-level qualification in occupational health and safety.
                   </p>
                 </div>
               </div>
@@ -917,7 +886,7 @@ export default function StuartClarkPortfolio() {
 
                 <div className="mt-6 pt-6 border-t border-slate-200">
                   <div className="text-sm text-slate-700 font-mono">
-                    <strong>Location:</strong> Remote / UK-based <br />
+                    <strong>Location:</strong> Remote / UK-based<br />
                     <strong>Availability:</strong> Open to remote opportunities in the UK and internationally
                   </div>
                 </div>
