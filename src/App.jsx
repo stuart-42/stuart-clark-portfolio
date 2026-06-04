@@ -342,29 +342,31 @@ export default function StuartClarkPortfolio() {
                 </div>
                 </div>
 
-                {/* Infographic */}
-                <a
-                  href="https://drive.google.com/file/d/1kHNKfcP-Y4zqyK3o6VJdwJrRIxR61Wjh/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block overflow-hidden border border-slate-200 hover:shadow-md transition-shadow"
-                >
-                  <img
-                    src="/infographic.png"
-                    alt="Dissertation infographic"
-                    className="w-full object-contain object-top h-[531px]"
-                  />
-                  <div className="p-3 bg-slate-50 text-sm text-center text-slate-700 flex items-center justify-center gap-2 font-mono text-xs tracking-wide">
-                    <ExternalLink size={14} />
-                    View full infographic
+                {/* SHAP + Confusion Matrix figures */}
+                <div className="flex flex-col gap-4">
+                  <div>
+                    <img
+                      src="/shap-comparison.png"
+                      alt="SHAP waterfall: best vs worst prediction"
+                      className="w-full object-contain"
+                    />
+                    <p className="mt-2 font-mono text-xs text-slate-500">SHAP waterfall: best vs worst prediction · BERT tokenisation</p>
                   </div>
-                </a>
+                  <div className="flex flex-col items-center">
+                    <img
+                      src="/confusion-matrix.png"
+                      alt="Normalised confusion matrix"
+                      className="w-3/5 object-contain"
+                    />
+                    <p className="mt-2 font-mono text-xs text-slate-500 text-center">Normalised confusion matrix (DistilBERT) · row-normalised by true class</p>
+                  </div>
+                </div>
               </div>
 
               {/* Resources */}
               <div className="border-t border-slate-200 pt-6">
                 <h3 className="font-semibold text-lg mb-4 text-slate-900">Project Resources</h3>
-                <div className="grid sm:grid-cols-3 gap-3">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <a
                     href="https://drive.google.com/file/d/1KnqiMBgV2T_Ur_c415AcwxtDlS6pHMHw/view?usp=sharing"
                     className="flex items-center gap-3 p-4 bg-slate-50 hover:bg-slate-100 transition-colors border border-slate-200"
@@ -384,6 +386,19 @@ export default function StuartClarkPortfolio() {
                     <div>
                       <div className="font-medium text-sm text-slate-900">NotebookLM Video</div>
                       <div className="text-xs text-slate-500 font-mono">2-min summary</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://drive.google.com/file/d/1kHNKfcP-Y4zqyK3o6VJdwJrRIxR61Wjh/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 bg-slate-50 hover:bg-slate-100 transition-colors border border-slate-200"
+                  >
+                    <ExternalLink size={20} className="text-slate-700 flex-shrink-0" />
+                    <div>
+                      <div className="font-medium text-sm text-slate-900">Full Infographic</div>
+                      <div className="text-xs text-slate-500 font-mono">Visual summary</div>
                     </div>
                   </a>
 
@@ -419,6 +434,21 @@ export default function StuartClarkPortfolio() {
                   HSG220 mitigation guidance — deployed on AWS ECS Fargate.
                 </p>
               </div>
+
+              {/* Triage UI screenshot */}
+              <a
+                href="https://rag-triage.vercel.app/app.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
+              >
+                <img
+                  src="/triage-ui.jpg"
+                  alt="RAG Triage API live deployment"
+                  className="w-full object-contain"
+                />
+                <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Live deployment · DistilBERT severity prediction → RIDDOR advisory → human-in-the-loop review</p>
+              </a>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
