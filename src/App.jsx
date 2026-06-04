@@ -141,23 +141,6 @@ export default function StuartClarkPortfolio() {
       <section id="home" className="flex items-center justify-center px-6 pt-16" style={{ minHeight: '74vh' }}>
         <div className="max-w-4xl mx-auto w-full">
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
-            <div className="flex-shrink-0 flex justify-center md:justify-start animate-[fadeIn_0.5s_ease-out]">
-              <img
-                src="/headshot.png"
-                alt="Stuart Clark"
-                className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-white shadow-md"
-                onError={e => {
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.nextElementSibling.style.display = 'flex';
-                }}
-              />
-              <div
-                className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-blue-600 border-4 border-white shadow-md items-center justify-center text-white text-3xl md:text-4xl font-bold"
-                style={{ display: 'none' }}
-              >
-                SC
-              </div>
-            </div>
             <div className="flex-1">
               <div className="inline-block px-3 py-1 bg-white border border-slate-200 text-slate-700 font-mono text-xs tracking-widest mb-6 animate-[fadeIn_0.6s_ease-out]">
                 Open to Opportunities
@@ -208,7 +191,15 @@ export default function StuartClarkPortfolio() {
       {/* About Section */}
       <section id="about" className="flex items-center px-6 py-24 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-slate-900">About Me</h2>
+          <div className="flex items-center gap-4 mb-12">
+            <img
+              src="/headshot.png"
+              alt="Stuart Clark"
+              className="w-9 h-9 rounded-full object-cover border-2 border-white shadow-sm flex-shrink-0"
+              onError={e => { e.currentTarget.style.display = 'none'; }}
+            />
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900">About Me</h2>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
