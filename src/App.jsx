@@ -141,7 +141,7 @@ export default function StuartClarkPortfolio() {
       <section id="home" className="flex items-center justify-center px-6 pt-16" style={{ minHeight: '74vh' }}>
         <div className="max-w-4xl mx-auto w-full">
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <div className="inline-block px-3 py-1 bg-white border border-slate-200 text-slate-700 font-mono text-xs tracking-widest mb-6 animate-[fadeIn_0.6s_ease-out]">
                 Open to Opportunities
               </div>
@@ -175,7 +175,36 @@ export default function StuartClarkPortfolio() {
                   Read the Dissertation
                 </a>
               </div>
+
+              {/* Metric badges */}
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-6">
+                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Macro-AUC 0.78</span>
+                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">180k+ OSHA records</span>
+                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Live on AWS ECS</span>
+                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Open source</span>
+              </div>
             </div>
+
+            {/* Window-chrome product thumbnail */}
+            <a
+              href="https://rag-triage.vercel.app/app.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 block w-full md:w-[280px] border border-slate-200 rounded-md shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white"
+            >
+              <div className="flex items-center gap-1.5 px-3 py-2 bg-slate-50 border-b border-slate-200">
+                <span className="w-2 h-2 rounded-full bg-red-400" />
+                <span className="w-2 h-2 rounded-full bg-yellow-400" />
+                <span className="w-2 h-2 rounded-full bg-green-400" />
+                <div className="flex-1 ml-2 px-2 py-0.5 bg-white border border-slate-200 rounded-sm text-xs text-slate-500 font-mono truncate">rag-triage.vercel.app/app</div>
+              </div>
+              <img
+                src="/triage-ui.jpg"
+                alt="RAG triage system — live deployment"
+                className="w-full h-[180px] object-cover object-top"
+              />
+              <div className="px-3 py-2 bg-white border-t border-slate-100 text-xs font-mono text-slate-500 tracking-wide text-center">live deployment · click to open</div>
+            </a>
           </div>
           <div className="flex justify-center mt-16">
             <button
@@ -435,70 +464,73 @@ export default function StuartClarkPortfolio() {
                 </p>
               </div>
 
-              {/* Triage UI screenshot */}
-              <a
-                href="https://rag-triage.vercel.app/app.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
-              >
-                <img
-                  src="/triage-ui.jpg"
-                  alt="RAG Triage API live deployment"
-                  className="w-full object-contain"
-                />
-                <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Live deployment · DistilBERT severity prediction → RIDDOR advisory → human-in-the-loop review</p>
-              </a>
+              <div className="grid md:grid-cols-2 gap-6 items-start">
+                {/* Left: Triage UI screenshot */}
+                <a
+                  href="https://rag-triage.vercel.app/app.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
+                >
+                  <img
+                    src="/triage-ui.jpg"
+                    alt="RAG Triage API live deployment"
+                    className="w-full object-contain"
+                  />
+                  <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Live deployment · DistilBERT severity prediction → RIDDOR advisory → human-in-the-loop review</p>
+                </a>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
-                    <Code2 size={20} className="text-slate-700" />
-                    Technical Approach
-                  </h3>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>FastAPI</strong> backend with Pydantic v2 validation</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>DistilBERT</strong> classifier across five severity classes</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>ChromaDB</strong> vector store with RIDDOR, HSG220 and OSHA knowledge bases</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span><strong>Gemini 2.5 Flash</strong> LLM for regulatory reasoning and causal analysis</span>
-                    </li>
-                  </ul>
-                </div>
+                {/* Right: Technical Approach + Key Features stacked */}
+                <div className="flex flex-col gap-6">
+                  <div>
+                    <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
+                      <Code2 size={20} className="text-slate-700" />
+                      Technical Approach
+                    </h3>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>FastAPI</strong> backend with Pydantic v2 validation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>DistilBERT</strong> classifier across five severity classes</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>ChromaDB</strong> vector store with RIDDOR, HSG220 and OSHA knowledge bases</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span><strong>Gemini 2.5 Flash</strong> LLM for regulatory reasoning and causal analysis</span>
+                      </li>
+                    </ul>
+                  </div>
 
-                <div>
-                  <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
-                    <BarChart3 size={20} className="text-slate-700" />
-                    Key Features
-                  </h3>
-                  <ul className="space-y-2 text-slate-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Severity prediction with regulatory RIDDOR mapping</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Causal factor extraction with retrieved mitigation directions</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Population-level pattern analysis from OSHA incident data</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                      <span>Deployed on AWS ECS Fargate with Vercel frontend proxy</span>
-                    </li>
-                  </ul>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
+                      <BarChart3 size={20} className="text-slate-700" />
+                      Key Features
+                    </h3>
+                    <ul className="space-y-2 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Severity prediction with regulatory RIDDOR mapping</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Causal factor extraction with retrieved mitigation directions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Population-level pattern analysis from OSHA incident data</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-slate-500 mt-1.5 text-xs">▸</span>
+                        <span>Deployed on AWS ECS Fargate with Vercel frontend proxy</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
