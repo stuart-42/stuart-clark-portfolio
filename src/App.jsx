@@ -218,7 +218,7 @@ export default function StuartClarkPortfolio() {
               </p>
 
               <p className="text-lg text-[#605A50] leading-relaxed">
-                After 18 years managing workplace safety across diverse industries, I recognized how AI could
+                After 18 years managing workplace safety across diverse industries, I recognised how AI could
                 transform risk management. This led me to pursue advanced studies in machine learning and natural
                 language processing.
               </p>
@@ -320,7 +320,7 @@ export default function StuartClarkPortfolio() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8A8070] mt-1.5 text-xs">▸</span>
-                      <span>Hyperparameter optimization with <strong>Optuna</strong></span>
+                      <span>Hyperparameter optimisation with <strong>Optuna</strong></span>
                     </li>
                   </ul>
                 </div>
@@ -771,7 +771,7 @@ export default function StuartClarkPortfolio() {
                   </div>
                   <div className="text-[#AA342C] font-medium mb-2">Northumbria University (Distance Learning)</div>
                   <p className="text-[#605A50]">
-                    Specializing in Machine Learning and Natural Language Processing. Dissertation focused on
+                    Specialising in Machine Learning and Natural Language Processing. Dissertation focused on
                     applying Transformer models and Explainable AI to workplace safety incident prediction.
                   </p>
                 </div>
