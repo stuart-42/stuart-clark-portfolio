@@ -224,7 +224,7 @@ export default function StuartClarkPortfolio() {
             <img
               src="/headshot.png"
               alt="Stuart Clark"
-              className="w-9 h-9 rounded-full object-cover border-2 border-white shadow-sm flex-shrink-0"
+              className="w-[3.25rem] h-[3.25rem] rounded-full object-cover border-2 border-white shadow-sm flex-shrink-0"
               onError={e => { e.currentTarget.style.display = 'none'; }}
             />
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900">About Me</h2>
