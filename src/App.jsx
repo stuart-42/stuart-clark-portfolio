@@ -785,7 +785,7 @@ export default function StuartClarkPortfolio() {
                     <h3 className="text-xl font-semibold text-slate-900">Career Break - Full-time Parenting</h3>
                     <span className="text-sm text-slate-500 mt-1 sm:mt-0 font-mono">Sep 2022 – Oct 2023</span>
                   </div>
-                  <div className="text-slate-700 font-medium mb-2">Remote / UK-based (UTC+5)</div>
+                  <div className="text-slate-700 font-medium mb-2">Remote / UK-based </div>
                   <p className="text-slate-700">
                     Balancing family responsibilities while pursuing advanced education in AI and computer science.
                   </p>
@@ -917,7 +917,7 @@ export default function StuartClarkPortfolio() {
 
                 <div className="mt-6 pt-6 border-t border-slate-200">
                   <div className="text-sm text-slate-700 font-mono">
-                    <strong>Location:</strong> Remote / UK-based (UTC+5)<br />
+                    <strong>Location:</strong> Remote / UK-based <br />
                     <strong>Availability:</strong> Open to remote opportunities in the UK and internationally
                   </div>
                 </div>
