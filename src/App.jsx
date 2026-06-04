@@ -792,21 +792,6 @@ export default function StuartClarkPortfolio() {
                 </div>
               </div>
 
-              {/* Consultant */}
-              <div className="relative md:pl-20 pl-0">
-                <div className="absolute left-5 top-2 w-6 h-6 bg-[#C8BFB0] rounded-full border-4 border-[#F3EEE2] hidden md:block" />
-                <div className="bg-[#EDE8DB] p-6 border border-[#C8BFB0]">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-[#181614]">Health & Safety Consultant</h3>
-                    <span className="text-sm text-[#7A7060] mt-1 sm:mt-0 font-mono">Mar 2022 – Sep 2022</span>
-                  </div>
-                  <div className="text-[#605A50] font-medium mb-2">Self-employed</div>
-                  <p className="text-[#605A50]">
-                    Provided independent consulting on food safety, health and safety, and site inspections.
-                  </p>
-                </div>
-              </div>
-
               {/* NEBOSH & Career Development */}
               <div className="relative md:pl-20 pl-0">
                 <div className="absolute left-5 top-2 w-6 h-6 bg-[#C8BFB0] rounded-full border-4 border-[#F3EEE2] hidden md:block" />
@@ -820,6 +805,21 @@ export default function StuartClarkPortfolio() {
                     Pursued the NEBOSH Diploma as a deliberate investment in deepening professional expertise —
                     the highest practitioner-level qualification in occupational health and safety, underpinning
                     all subsequent consulting and AI safety work.
+                  </p>
+                </div>
+              </div>
+
+              {/* Consultant */}
+              <div className="relative md:pl-20 pl-0">
+                <div className="absolute left-5 top-2 w-6 h-6 bg-[#C8BFB0] rounded-full border-4 border-[#F3EEE2] hidden md:block" />
+                <div className="bg-[#EDE8DB] p-6 border border-[#C8BFB0]">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                    <h3 className="text-xl font-semibold text-[#181614]">Health & Safety Consultant</h3>
+                    <span className="text-sm text-[#7A7060] mt-1 sm:mt-0 font-mono">Mar 2022 – Sep 2022</span>
+                  </div>
+                  <div className="text-[#605A50] font-medium mb-2">Self-employed</div>
+                  <p className="text-[#605A50]">
+                    Provided independent consulting on food safety, health and safety, and site inspections.
                   </p>
                 </div>
               </div>
