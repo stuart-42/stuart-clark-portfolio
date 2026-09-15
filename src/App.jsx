@@ -157,7 +157,7 @@ export default function StuartClarkPortfolio() {
 
               <div className="flex flex-col sm:flex-row gap-4 items-start animate-[fadeIn_1.2s_ease-out]">
                 <a
-                  href="https://rag-triage.vercel.app/app.html"
+                  href="https://rag-triage.vercel.app/stepper.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-sm hover:bg-blue-700 transition-colors"
@@ -187,7 +187,7 @@ export default function StuartClarkPortfolio() {
 
             {/* Window-chrome product thumbnail */}
             <a
-              href="https://rag-triage.vercel.app/app.html"
+              href="https://rag-triage.vercel.app/stepper.html"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 block w-full md:w-[280px] border border-slate-200 rounded-md shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white"
@@ -467,7 +467,7 @@ export default function StuartClarkPortfolio() {
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 {/* Left: Triage UI screenshot */}
                 <a
-                  href="https://rag-triage.vercel.app/app.html"
+                  href="https://rag-triage.vercel.app/stepper.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
@@ -551,7 +551,7 @@ export default function StuartClarkPortfolio() {
                   </a>
 
                   <a
-                    href="https://rag-triage.vercel.app/app.html"
+                    href="https://rag-triage.vercel.app/stepper.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-blue-600 text-white hover:bg-blue-700 transition-colors border border-blue-600"
