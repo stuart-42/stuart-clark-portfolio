@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createContext, useContext } from 'react';
 import { Mail, Linkedin, Download, ExternalLink, ChevronDown, FileText, Video, BarChart3, Code2, Award, Menu, X } from 'lucide-react';
 
 const SKILL_ICONS = {
@@ -48,6 +48,37 @@ const SkillTag = ({ label }) => {
       {!isHF && !isVercel && src && <img src={src} alt="" width="12" height="12" className="flex-shrink-0 opacity-60" />}
       {label}
     </span>
+  );
+};
+
+const DetailsContext = createContext(false);
+
+const CollapsibleDetails = ({ children }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <DetailsContext.Provider value={open}>
+      <div className={`transition-[margin] duration-300 ${open ? '' : '-mb-3'}`}>
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className={`flex items-center gap-2 text-sm font-mono text-slate-700 hover:text-blue-600 transition-[color,margin] duration-300 ${open ? 'mb-4' : 'mb-0'}`}
+        >
+          {open ? 'Hide technical details' : 'Show technical details'}
+          <ChevronDown size={16} className={`transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
+        </button>
+        {children}
+      </div>
+    </DetailsContext.Provider>
+  );
+};
+
+const CollapsePanel = ({ children }) => {
+  const open = useContext(DetailsContext);
+  return (
+    <div className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+      <div className="overflow-hidden" aria-hidden={!open} inert={open ? undefined : ''}>{children}</div>
+    </div>
   );
 };
 
@@ -318,8 +349,10 @@ export default function StuartClarkPortfolio() {
               </div>
 
               {/* Technical Overview + Infographic */}
+              <CollapsibleDetails>
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 <div className="flex flex-col gap-6">
+                <CollapsePanel>
                 <div>
                   <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
                     <Code2 size={20} className="text-slate-700" />
@@ -344,6 +377,7 @@ export default function StuartClarkPortfolio() {
                     </li>
                   </ul>
                 </div>
+                </CollapsePanel>
 
                 <div>
                   <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
@@ -372,6 +406,7 @@ export default function StuartClarkPortfolio() {
                 </div>
 
                 {/* SHAP + Confusion Matrix figures */}
+                <CollapsePanel>
                 <div className="flex flex-col gap-4">
                   <div>
                     <img
@@ -390,10 +425,12 @@ export default function StuartClarkPortfolio() {
                     <p className="mt-2 font-mono text-xs text-slate-500 text-center">Normalised confusion matrix (DistilBERT) · row-normalised by true class</p>
                   </div>
                 </div>
+                </CollapsePanel>
               </div>
+              </CollapsibleDetails>
 
               {/* Resources */}
-              <div className="border-t border-slate-200 pt-6">
+              <div className="border-t border-slate-200 pt-4">
                 <h3 className="font-semibold text-lg mb-4 text-slate-900">Project Resources</h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <a
@@ -464,6 +501,8 @@ export default function StuartClarkPortfolio() {
                 </p>
               </div>
 
+              <CollapsibleDetails>
+              <CollapsePanel>
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 {/* Left: Triage UI screenshot */}
                 <a
@@ -533,8 +572,10 @@ export default function StuartClarkPortfolio() {
                   </div>
                 </div>
               </div>
+              </CollapsePanel>
+              </CollapsibleDetails>
 
-              <div className="border-t border-slate-200 pt-6">
+              <div className="border-t border-slate-200 pt-4">
                 <h3 className="font-semibold text-lg mb-4 text-slate-900">Project Resources</h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <a
@@ -583,6 +624,8 @@ export default function StuartClarkPortfolio() {
                 </p>
               </div>
 
+              <CollapsibleDetails>
+              <CollapsePanel>
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 {/* Left: Technical Approach + Key Features stacked */}
                 <div className="flex flex-col gap-6">
@@ -652,8 +695,10 @@ export default function StuartClarkPortfolio() {
                   <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Multimodal extraction · LOLER / pressure vessel certificates → validated JSON</p>
                 </a>
               </div>
+              </CollapsePanel>
+              </CollapsibleDetails>
 
-              <div className="border-t border-slate-200 pt-6">
+              <div className="border-t border-slate-200 pt-4">
                 <h3 className="font-semibold text-lg mb-4 text-slate-900">Project Resources</h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <a
