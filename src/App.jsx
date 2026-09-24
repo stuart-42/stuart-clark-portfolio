@@ -350,9 +350,9 @@ export default function StuartClarkPortfolio() {
 
               {/* Technical Overview + Infographic */}
               <CollapsibleDetails>
+              <CollapsePanel>
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 <div className="flex flex-col gap-6">
-                <CollapsePanel>
                 <div>
                   <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
                     <Code2 size={20} className="text-slate-700" />
@@ -377,7 +377,6 @@ export default function StuartClarkPortfolio() {
                     </li>
                   </ul>
                 </div>
-                </CollapsePanel>
 
                 <div>
                   <h3 className="font-semibold text-lg mb-4 flex items-center gap-2 text-slate-900">
@@ -406,7 +405,6 @@ export default function StuartClarkPortfolio() {
                 </div>
 
                 {/* SHAP + Confusion Matrix figures */}
-                <CollapsePanel>
                 <div className="flex flex-col gap-4">
                   <div>
                     <img
@@ -425,8 +423,8 @@ export default function StuartClarkPortfolio() {
                     <p className="mt-2 font-mono text-xs text-slate-500 text-center">Normalised confusion matrix (DistilBERT) · row-normalised by true class</p>
                   </div>
                 </div>
-                </CollapsePanel>
               </div>
+              </CollapsePanel>
               </CollapsibleDetails>
 
               {/* Resources */}
