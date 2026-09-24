@@ -46,7 +46,7 @@ The Projects section copy is already strong (specific metrics, real tech, defens
 
 **Scope:** Replace the two hero buttons. Keep all other hero content for now.
 
-- Primary button (currently "Connect on LinkedIn") → **`View Live Demo`** linking to the deployed AWS triage API
+- Primary button (currently "Connect on LinkedIn") → **`Watch Demo Video`** linking to the recorded walkthrough of the AWS triage API (https://youtu.be/ixgaJu1ssU4)
 - Secondary button (currently "View Projects") → **`Read the Dissertation`** linking to the dissertation PDF (or `#projects` if PDF not yet linked)
 - Move the LinkedIn link to the footer/contact section. It should not be the primary hero CTA.
 

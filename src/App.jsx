@@ -157,13 +157,13 @@ export default function StuartClarkPortfolio() {
 
               <div className="flex flex-col sm:flex-row gap-4 items-start animate-[fadeIn_1.2s_ease-out]">
                 <a
-                  href="https://rag-triage.vercel.app/stepper.html"
+                  href="https://youtu.be/ixgaJu1ssU4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-sm hover:bg-blue-700 transition-colors"
                 >
-                  <ExternalLink size={20} />
-                  View Live Demo
+                  <Video size={20} />
+                  Watch Demo Video
                 </a>
                 <a
                   href="https://drive.google.com/file/d/1KnqiMBgV2T_Ur_c415AcwxtDlS6pHMHw/view?usp=sharing"
@@ -180,14 +180,14 @@ export default function StuartClarkPortfolio() {
               <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mt-6">
                 <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Macro-AUC 0.78</span>
                 <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">180k+ OSHA records</span>
-                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Live on AWS ECS</span>
+                <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Deployed on AWS ECS (demo video)</span>
                 <span className="inline-flex items-center px-2.5 py-0.5 border border-slate-300 rounded-sm text-xs font-mono tracking-wide text-slate-600">Open source</span>
               </div>
             </div>
 
             {/* Window-chrome product thumbnail */}
             <a
-              href="https://rag-triage.vercel.app/stepper.html"
+              href="https://youtu.be/ixgaJu1ssU4"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 block w-full md:w-[280px] border border-slate-200 rounded-md shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white"
@@ -196,14 +196,14 @@ export default function StuartClarkPortfolio() {
                 <span className="w-2 h-2 rounded-full bg-red-400" />
                 <span className="w-2 h-2 rounded-full bg-yellow-400" />
                 <span className="w-2 h-2 rounded-full bg-green-400" />
-                <div className="flex-1 ml-2 px-2 py-0.5 bg-white border border-slate-200 rounded-sm text-xs text-slate-500 font-mono truncate">rag-triage.vercel.app/app</div>
+                <div className="flex-1 ml-2 px-2 py-0.5 bg-white border border-slate-200 rounded-sm text-xs text-slate-500 font-mono truncate">Recorded walkthrough</div>
               </div>
               <img
                 src="/triage-ui.jpg"
                 alt="RAG triage system — live deployment"
                 className="w-full h-[180px] object-cover object-top"
               />
-              <div className="px-3 py-2 bg-white border-t border-slate-100 text-xs font-mono text-slate-500 tracking-wide text-center">live deployment · click to open</div>
+              <div className="px-3 py-2 bg-white border-t border-slate-100 text-xs font-mono text-slate-500 tracking-wide text-center">2-minute walkthrough · click to watch</div>
             </a>
           </div>
           <div className="flex justify-center mt-16">
@@ -460,24 +460,24 @@ export default function StuartClarkPortfolio() {
                 <p className="text-slate-700 leading-relaxed">
                   A health and social care incident classification system combining fine-tuned BERT severity prediction
                   with <strong>Retrieval-Augmented Generation</strong> to map incidents to RIDDOR 2013 regulations and
-                  HSG220 mitigation guidance — deployed on AWS ECS Fargate.
+                  HSG220 mitigation guidance — deployed on AWS ECS Fargate (since taken offline; see demo video).
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 items-start">
                 {/* Left: Triage UI screenshot */}
                 <a
-                  href="https://rag-triage.vercel.app/stepper.html"
+                  href="https://youtu.be/ixgaJu1ssU4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block border border-slate-200 hover:shadow-md transition-shadow overflow-hidden"
                 >
                   <img
                     src="/triage-ui.jpg"
-                    alt="RAG Triage API live deployment"
+                    alt="RAG Triage API walkthrough"
                     className="w-full object-contain"
                   />
-                  <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Live deployment · DistilBERT severity prediction → RIDDOR advisory → human-in-the-loop review</p>
+                  <p className="p-3 font-mono text-xs text-slate-500 bg-slate-50">Recorded walkthrough · DistilBERT severity prediction → RIDDOR advisory → human-in-the-loop review</p>
                 </a>
 
                 {/* Right: Technical Approach + Key Features stacked */}
@@ -527,7 +527,7 @@ export default function StuartClarkPortfolio() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-slate-500 mt-1.5 text-xs">▸</span>
-                        <span>Deployed on AWS ECS Fargate with Vercel frontend proxy</span>
+                        <span>Deployed on AWS ECS Fargate with Vercel frontend proxy (since taken offline to manage hosting cost)</span>
                       </li>
                     </ul>
                   </div>
@@ -551,15 +551,15 @@ export default function StuartClarkPortfolio() {
                   </a>
 
                   <a
-                    href="https://rag-triage.vercel.app/stepper.html"
+                    href="https://youtu.be/ixgaJu1ssU4"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-4 bg-blue-600 text-white hover:bg-blue-700 transition-colors border border-blue-600"
                   >
-                    <ExternalLink size={20} className="flex-shrink-0" />
+                    <Video size={20} className="flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-sm">Live Demo</div>
-                      <div className="text-xs text-blue-200 font-mono">Try the app</div>
+                      <div className="font-medium text-sm">Demo Video</div>
+                      <div className="text-xs text-blue-200 font-mono">Watch the demo walkthrough</div>
                     </div>
                   </a>
                 </div>
